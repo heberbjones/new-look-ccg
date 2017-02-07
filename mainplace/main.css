@@ -4,7 +4,7 @@
 z-index:101; transition:0.5s; border:black 1px solid;
 }
 
-body {margin-left:250px; transition:0.5s;}
+body {margin-left:250px; transition:0.5s; overflow-x:hidden;}
 
 #colbtn {}
 
