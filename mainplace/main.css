@@ -1,4 +1,4 @@
-#header {height:65px; background-color:red; color:white; padding:0 10px 0 40px;}
+#header {height:65px; background-color:red; color:white; padding:0 10px 5px 40px;}
 
 #lefter {position:fixed; width:250px; height:100%; background-color:black; color:white; left:0;
 z-index:101; transition:0.5s;
@@ -9,3 +9,12 @@ body {margin-left:250px; transition:0.5s;}
 #colbtn {}
 
 #colbtn:hover {color:#d9d9d9; cursor:pointer;}
+#colbtn:active {color:red;}
+
+#slide {width:100%; height:50%; overflow:hidden; border-bottom:black 1px solid;}
+
+#img1, #img2, #img3 {display:none;}
+
+.slideimg {width:100%;}
+
+.logo {font-family:; font-size:30px;}
