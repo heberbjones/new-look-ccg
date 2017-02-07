@@ -1,7 +1,7 @@
 #header {height:65px; background-color:red; color:white; padding:0 10px 5px 40px;}
 
 #lefter {position:fixed; width:250px; height:100%; background-color:black; color:white; left:0;
-z-index:101; transition:0.5s;
+z-index:101; transition:0.5s; border:black 1px solid;
 }
 
 body {margin-left:250px; transition:0.5s;}
@@ -17,4 +17,4 @@ body {margin-left:250px; transition:0.5s;}
 
 .slideimg {width:100%;}
 
-.logo {font-family:; font-size:30px;}
+#logo { font-size:30px; font-family:'Raleway';}
