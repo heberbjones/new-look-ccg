@@ -1,4 +1,4 @@
-#header {height:65px; background-color:red; color:white; padding:0 10px 5px 40px;}
+#header {height:65px; background-color:white; color:red; padding:0 10px 5px 40px; border-bottom:black 1px solid;}
 
 #lefter {position:fixed; width:250px; height:100%; background-color:black; color:white; left:0;
 z-index:101; transition:0.5s; border:black 1px solid;
