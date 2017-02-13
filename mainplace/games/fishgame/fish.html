@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="../../site.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+<title> Fish Game! </title>
+<script src="https://simplycoding.org/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open("target",800,500);
+var background = new sjs.Image("Images/space.png"); 
+background.setSize(sjs.getWidth(),sjs.getHeight()); 
+
+
+
+var player = new sjs.Image("Images/flash_right.png");
+player.type = "player";
+player.setSize(100,100);
+player.friction = .1;
+player.accel = .5;
+
+player.setHFlipImages("Images/flash_left.png", "Images/flash_right.png");
+
+var playM = new Audio('Music/COF.mp3'); 
+var musicOn = false;
+var toggle = true; 
+
+sjs.keyDown(SPACE_KEY, function(){
+if(toggle == true){
+if(musicOn == false){
+playM.play();
+musicOn = true;
+} else {
+playM.pause();
+musicOn = false;
+}
+toggle = false;
+setTimeout(function(){
+toggle = true;
+},1000);
+} //end if toggle statement
+}); //end keyDown function
+//var menu_text=new sjs.Text("press space if you want music")   ,    setTimeout(function(){
+//menu_text.destroy
+//},2000);
+
+sjs.keyDown(RIGHT_KEY, function(){ 
+player.faceRight();
+player.pushRight();
+});
+
+
+sjs.keyDown(LEFT_KEY, function(){ 
+player.faceLeft();
+player.pushLeft();
+});
+
+
+sjs.keyDown(UP_KEY, function(){ 
+player.pushUp();
+});
+
+sjs.keyDown(DOWN_KEY, function(){ 
+player.pushDown();
+});
+
+//crums
+
+setInterval(function(){
+var newCrumb = new sjs.Image("Images/crumbs.png");
+newCrumb.type = "crumbs";
+newCrumb.friction = .2;
+newCrumb.setGravity();
+newCrumb.centerH();
+newCrumb.noBounds = true;
+}, 5000);
+
+sjs.onHit("crumbs","bottom_screen",function(x,y){ 
+x.destroy();
+});
+
+//enemies
+setInterval(function(){
+if(Math.random()>0.5){
+ var enemy = new sjs.Image("Images/fish2_right.png");  
+enemy.type = "enemy";
+enemy.setSize(100,50);
+enemy.pushRight(3);
+enemy.noBounds = true;
+enemy.friction = 0;
+enemy.scaleSize(.5 + Math.random() * 1.2);
+enemy.moveTo(-enemy.getWidth(), Math.random()*(enemy.getClamp().y)); 
+
+}else{
+var enemy = new sjs.Image("Images/fish2_left.png");     
+enemy.type = "enemy";
+enemy.setSize(100,50);
+enemy.pushLeft(3);
+enemy.noBounds = true;
+enemy.friction = 0;
+enemy.scaleSize(.5 + Math.random() * 1.2);
+enemy.moveTo(-enemy.getWidth(), Math.random()*(enemy.getClamp().y)); 
+
+}     
+},1000);
+
+
+sjs.right_screen.offset(300);
+sjs.left_screen.offset(-300);
+
+sjs.onHit("enemy",["left_screen", "right_screen"], function(x,y){
+x.destroy();
+});
+var score=0;
+var score_txt=new sjs.Text("score:0",21,"orange");
+sjs.onHit("player","enemy", function(x,y){ 
+   if(x.getWidth() > y.getWidth() && 
+       x.getHeight() > y.getHeight()) {
+   	y.destroy();
+   	score=score+1;
+score_txt.setText("Score:"+score);
+localStorage.setItem("score", score);
+if(y.destroy)
+x.grow(15,8);
+if(score > 19){
+sjs.destroyAll("enemy");
+window.location = "win.html";
+}
+} else {
+	 
+x.destroy();
+window.location = "gameover.html";
+}
+y.destroy();
+});
+
+sjs.onHit("player","crumbs",function(x,y){
+x.grow(60,30);
+setTimeout(function(){
+x.grow(-60,-30);
+}, 4000);
+y.destroy();
+});
+ 
+
+
+} //end start
+</script>
+</head>
+<body onload="start()">
+<a href="../../index.html" title="Homepage"><h1 class="homelink">Home</h1></a>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>

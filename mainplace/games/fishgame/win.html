@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Menu </title>
+<link type="text/css" rel="stylesheet" href="../../site.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<script src="https://simplycoding.org/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open()
+var score_txt = new sjs.Text("Your Score: 0", 21, "orange");
+score_txt.setText("Your Score: "+localStorage.getItem("score"));
+
+var startBtn = new sjs.Button("Start", function(){
+window.location = "fish.html";
+});
+
+startBtn.center();
+
+var info_text = new sjs.Text("you win!!!!!!!!",20,"black");
+
+info_text.bottom().centerH();
+}
+</script>
+</head>
+<body onload="start()">
+<a href="../../index.html" title="home"><h1 class="homelink">Home</h1></a>
+
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>

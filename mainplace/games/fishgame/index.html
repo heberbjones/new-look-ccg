@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="../../site.css">
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<title> Menu </title>
+<script src="https://simplycoding.org/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var menu_text = new sjs.Text("MENU",28,"blue");
+
+menu_text.centerH();
+
+var startBtn = new sjs.Button("Play", function(){
+window.location = "fish.html";
+});
+
+startBtn.center();
+
+var info_text = new sjs.Text("Created by CCG",20,"black");
+
+info_text.bottom().centerH();
+}
+</script>
+</head>
+<body onload="start();">
+<a href="../../index.html"><h1 class="homelink"> Home </h1></a>
+
+<div id="target" style="margin:auto; background:grey;"></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+#player {background-color:red; height:50px; width:50px; position:absolute; top:50px; left:10px;
+z-index:100;}
+
+#gamearea {background-color:#000066; border:black 1px solid; width:1050px; height:550px; margin-left:12%;}
+
+#speedball, #speedball2 {background-color:#00cc00; border-radius:50%; width:20px; height:20px; position:absolute;
+left:400px; top:10px;}
+
+#strSball {background-color:#00cc00; border-radius:50%; width:20px; height:20px;}
+
+#enemy2 {display:none;}
+
+#winbtn {color:gold; background-color:white; }
+#winbtn:hover {color:white; background-color:gold;}
+
+#enemy, #enemy2 {
+	position:absolute; 
+}
+
+#tBall {
+	background-color:red; border-radius:50%; width:20px; height:20px; display:none;
+	border:5px #0099ff solid
+}
+
+#score, #scoretext {color:orange; font-size:20px; font-family:sans-serif; z-index:101;}
+
+#storebtn {
+	margin-left:78%; margin-top:-2%; z-index:103; background-color:green; color:black; border:black solid 1px;
+	
+}
+
+#htp {background-color:green; color:black; position:absolute; top:3.5%; left:90%; border:black 1px solid;}
+#htp:hover {background-color:black; color:green;}
+
+#htparea {background-color:black; color:white; width:60%;  padding:0 2% 5% 2%;
+ position:absolute;
+top:3%; left:20%; z-index:200; display:none;}
+
+#storebtn:hover {color:green; background-color:black;}
+
+#store {background-color:black; width:60%; padding:0 2% 5% 2%;  position:absolute; left:20%; top:5%; display:none; 
+color:white; z-index:103;}
+
+.buybtn {color:#00cc00; background-color:white; border:black solid 1px; }
+.buybtn:hover {color:white; background-color:#00cc00; }
+
+.stroption {border-bottom:gray 5px solid; padding-bottom:15px;}
+
+#closestr {position:fixed; left:74%; top:7%;}
+
+#speedball2 {display:none;}
+
+.bought {color:red; font-family:monospace; display:none; }

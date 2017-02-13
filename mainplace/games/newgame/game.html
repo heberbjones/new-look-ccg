@@ -1,0 +1,85 @@
+<html>
+<head>
+<title> Star Catchers </title>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="../../main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="main.css">
+
+</head>
+	<body onkeypress="getkey(event)" onload="start()">
+	<a href="../../index.html" title="home" class="homelink" style="position:absolute; font-size:30px;"
+	>Home</a>
+		<div class="row">
+			<div id="gamearea" class="col-md-12">
+				<div class="row">
+					<p id="scoretext" class="col-sm-1">Points:</p><p id="score" class="col-sm-0.5">0</p>
+					<input type="button" id="storebtn" value="STORE" class="col-sm-1"></input>
+					<input type="button" id="htp" value="How To Play" ></input>
+					<h3 style="color:gold; text-align:center; z-index:102; display:none;"
+					id="nexttext">Next Level!</h3>
+				</div>
+
+			<img id="player" src="pics/mainface.png" width="100%">
+
+		<div id="speedball"></div>
+		<div id="speedball2"></div>
+		<div id="tBall"></div>
+	<img src="enemy.png" alt="enemy" width="30px" id="enemy">
+	<img src="enemy2.png" alt="eneny" width="30px" id="enemy2">
+
+</div></div>
+
+<div class="row">
+	<div id="store" class="col-md-12"><input type="button" value="CLOSE" class="buybtn" id="closestr"></input>
+		<div class="stroption">
+		  <h3>Extra speed ball <img src="strSball.png" alt="speed ball" width="10%"></h3>
+		  <p>Increase your speed by 50% with <strong>another</strong> Speed Ball for: <input id="extraSbll" value="10 Points" type="button" class="buybtn"></input></p>
+		  <p class="bought" id="sballBGHT">Bought</p>
+			<h4></h4>
+			</div>
+			
+			<div class="stroption">
+			<h3>Extra Enemy <img src="enemypic.png" alt="A Picture of the enemy." width="7%"></h3>
+			<p>Increase the chances of your player running into an enemy with <strong>another</strong> enemy for:
+			<input type="button" class="buybtn" value="15 Points" id="extraEnmy"></input></p>
+			<p class="bought" id="enemyBGHT">Bought</p>
+			
+			</div>
+			
+			<div class="stroption">
+				<h3 style="color:gold; font-family:Lobster;">WIN!!</h3>
+				<p style="color:gold">Win for: <input type="button" class="buybtn" value="40 Points" id="winbtn"
+				></input></p>
+				<p style="color:gold; display:none;" id="winalert">YOU WON!</p>
+			
+			
+			</div>
+	</div>
+</div>
+
+<div class="row">
+
+	<div id="htparea">
+	<h2>How To Play</h2>
+	<p>To move your <span style="color:red;">Player</span>, Use the keys, <span style="color:#00cc00;">W A S D<br><br></span>
+	The aim of the game is to earn points by getting the enemy. <img src="enemypic.png" width="20px" alt="Enemy pic"><br><br>
+	You can increase your speed by 10% by eating the green ball. <img src="strSball.png" width="20px"><br><br>
+	If you press the <span style="color:#00cc00; text-decoration:italic;">Spacebar</span> a 
+	<span style="color:red">red</span> and <span style="color:#0099ff">blue</span>
+	ball <img src="tbpic.png" width="20px"> will appear where your player last was. If you press the 
+	<span style="color:#00cc00">E</span> key your player will teleport where you placed the
+	<span style="color:#0099ff;">ba</span><span style="color:red;">ll</span> last.
+	<br><br>
+	You can earn more things by clicking the store button, and using your points to buy things.<br><br>
+	You can also <span style="color:gold">win</span> the game, by buying it in the store for 40 points.<br><br></p>
+	<input type="button" class="buybtn" id="closehtp" value="CLOSE"></input>
+	</div>
+
+</div>
+
+<script src="webpage.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
