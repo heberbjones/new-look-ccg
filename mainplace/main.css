@@ -3,7 +3,7 @@ position:fixed; top:0; z-index:100; width:100%; left:250px; transition:0.5s;
 }
 
 #lefter {position:fixed; width:250px; height:100%; background-color:black; color:white; left:0;
-z-index:101; transition:0.5s; border:black 1px solid;
+z-index:101; transition:0.5s; border:black 1px solid; padding:50px 0 10px 0;
 }
 
 body {margin-left:250px; transition:0.5s; overflow-x:hidden;}
@@ -22,3 +22,15 @@ body {margin-left:250px; transition:0.5s; overflow-x:hidden;}
 #logo { font-size:30px; font-family:'Raleway';}
 
 .rales {font-family:'Raleway';}
+
+#lefter a {
+	color:white; font-size:20px; cursor:pointer; text-decoration:none;
+}
+
+#lefter div {
+	width:100%; padding:5px 10px 5px 50px;
+}
+
+#lefter div:hover {
+	background-color:#4d4d4d;
+}
