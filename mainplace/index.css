@@ -1,7 +1,7 @@
 .games {padding:0 5% 10px 5%; background-color:white; color:red;}
 .games img {
 
-
+border:white 1px solid;
 }
 
 .games img:hover {
