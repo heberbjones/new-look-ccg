@@ -5,6 +5,27 @@ border:white 1px solid;
 }
 
 .games img:hover {
-	border:red 1px solid;
+
 	cursor:pointer;
+}
+
+#topgames {
+	margin:65px 0 0 5%;
+	width:45%;
+	padding:10px 10px 30px 10px;
+}
+
+#topgames {
+	border:black 1px dashed;
+	border-radius:30px;
+}
+
+#topgames img {
+	border:black 1px solid;
+margin:10px 10px 10px 20px;	
+	
+}
+
+#topgames img:hover {
+	border:red 1px solid;
 }

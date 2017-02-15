@@ -1,5 +1,5 @@
 #header {height:65px; background-color:white; color:red; padding:0 10px 5px 40px; border-bottom:black 1px solid;
-position:fixed; top:0; z-index:100; width:100%; left:250px; transition:0.5s;
+position:fixed; top:0; z-index:100; width:100%; left:250px; transition:0.5s; overflow:hidden;
 }
 
 #lefter {position:fixed; width:250px; height:100%; background-color:black; color:white; left:0;
@@ -24,13 +24,22 @@ body {margin-left:250px; transition:0.5s; overflow-x:hidden;}
 .rales {font-family:'Raleway';}
 
 #lefter a {
-	color:white; font-size:20px; cursor:pointer; text-decoration:none;
+	color:white; font-size:24px; cursor:pointer; text-decoration:none;
 }
 
 #lefter div {
-	width:100%; padding:5px 10px 5px 50px;
+	width:100%; padding:7px 10px 7px 50px;
 }
 
 #lefter div:hover {
 	background-color:#4d4d4d;
+}
+
+.redtitl {
+	color:red;
+}
+
+.middlepic {
+border-left:none;
+border-right:none;
 }

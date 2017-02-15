@@ -1,10 +1,14 @@
-.games {padding:0 5% 10px 5%; background-color:white; color:red;}
+.games {padding:0 5% 40px 5%; background-color:white; color:red; border-bottom:black 1px solid;}
 .games img {
-
-border:white 1px solid;
+	border-left:black 1px solid;
+	border-right:black 1px solid;
+		border-top:white 1px solid;
+	border-bottom:white 1px solid;
 }
 
 .games img:hover {
-	border:red 1px solid;
+	
 	cursor:pointer;
+		border-top:red 1px solid;
+	border-bottom:red 1px solid;
 }
