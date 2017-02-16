@@ -9,23 +9,28 @@ border:white 1px solid;
 	cursor:pointer;
 }
 
-#topgames {
-	margin:65px 0 0 5%;
-	width:45%;
-	padding:10px 10px 30px 10px;
+.dotrow {
+	
+	margin:65px 5% 5% 5%;
 }
 
 #topgames {
+	border-right:black 1px dashed;
+	
+}
+
+.dotrow div {
 	border:black 1px dashed;
-	border-radius:30px;
+	padding:10px 10px 30px 10px;
+	
 }
 
-#topgames img {
+.dotrow img {
 	border:black 1px solid;
 margin:10px 10px 10px 20px;	
 	
 }
 
-#topgames img:hover {
+.dotrow img:hover {
 	border:red 1px solid;
 }
