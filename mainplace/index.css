@@ -11,3 +11,18 @@
 		border-top:red 1px solid;
 	border-bottom:red 1px solid;
 }
+
+.article {
+	border:black 1px solid;
+	background-color:#f2f2f2;
+	padding:25px;
+	border-radius:30px;
+	margin:30px;
+	font-family:'Raleway';
+}
+
+.articles {
+	border-bottom:black 1px solid;
+	padding-bottom:30px;
+}
+
