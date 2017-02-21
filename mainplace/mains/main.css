@@ -1,12 +1,12 @@
 #header {height:65px; background-color:white; color:red; padding:0 10px 5px 40px; border-bottom:black 1px solid;
-position:fixed; top:0; z-index:100; width:100%; left:250px; transition:0.5s; overflow:hidden;
+position:fixed; top:0; z-index:100; width:100%; left:18%; transition:0.5s; overflow:hidden;
 }
 
-#lefter {position:fixed; width:250px; height:100%; background-color:black; color:white; left:0;
+#lefter {position:fixed; width:18%; height:100%; background-color:black; color:white; left:0;
 z-index:101; transition:0.5s; border:black 1px solid; padding:50px 0 10px 0;
 }
 
-body {margin-left:250px; transition:0.5s; overflow-x:hidden;}
+body {margin-left:18%; transition:0.5s; overflow-x:hidden;}
 
 #colbtn {}
 

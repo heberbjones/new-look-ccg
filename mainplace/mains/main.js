@@ -14,7 +14,7 @@ colbtn.onclick = leftermovement;
 function leftermovement () {
 	
 	if (colstat.seen === "yes") {
-		lefter.style.left = "-250px";
+		lefter.style.left = "-18%";
 		body.style.marginLeft = "0";
 		colbtn.setAttribute("class","fa fa-angle-right");
 		header.style.left = "0";
@@ -23,8 +23,8 @@ function leftermovement () {
 	
 	else if (colstat.seen === "no") {
 		lefter.style.left = "0px";
-		body.style.marginLeft = "250";
-		header.style.left = "250px";
+		body.style.marginLeft = "18%";
+		header.style.left = "18%";
 		colbtn.setAttribute("class","fa fa-angle-left");
 		colstat.seen = "yes";
 	}
