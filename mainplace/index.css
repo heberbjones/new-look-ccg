@@ -1,4 +1,4 @@
-.games {padding:0 5% 40px 5%; background-color:white; color:red; border-bottom:black 1px solid;}
+.games {padding:0 5% 40px 5%; background-color:white; color:red; border-bottom:black 1px solid; border-top:black 1px solid;}
 .games img {
 
 		border-top:white 1px solid;
@@ -22,12 +22,13 @@
 	padding:25px;
 	border-radius:30px;
 	margin:30px;
+	margin-left:50px;
 	font-family:'Raleway';
 	
 }
 
 .articles {
-	border-bottom:black 1px solid;
+	
 	padding-bottom:30px;
 }
 
