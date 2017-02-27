@@ -74,7 +74,7 @@
 		
 		<div class="row">
 		
-			<div id="about" class="col-md-4">
+			<div id="about" class="col-md-3">
 			
 				<h2 class="redtitl">About The Contest</h2>
 				
@@ -82,10 +82,34 @@
 				
 				<h4 class="rales">
 				
-					C.C.G Has a contest once a month. Where developers can enter 
+					<span class="red">C.C.G</span> Has a contest once a month. Where developers can enter 
 					in their game, that they made.
 					
 				</h4>
+			
+			</div>
+			
+			<div class="col-md-6" id="enterit">
+			
+				<h2>Game Contest</h2>
+				
+				<form action="contest.php" method="post">
+				
+					<br><br><br>
+				
+					<input type="text" placeholder="C.C.G Username" name="user" required></input>
+					<br><br>
+					<input type="password" placeholder="Password" name="password"></input>
+					<br><br>
+					<input type="email" placeholder="Your Email" name="email"></input>
+					<br><br>
+					<h4>Have a link to my C.C.G account when other users click on my game.</h4>
+					<br>
+					<input type="radio" name="linktoaccnt" value="yes"> Yes</input>
+					<br><br>
+					<input type="radio" name="linktoaccnt" value="no"> no</input>
+				
+				</form>
 			
 			</div>
 						
