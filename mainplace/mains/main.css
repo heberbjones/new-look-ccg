@@ -46,6 +46,14 @@ body {margin-left:18%; transition:0.5s; overflow-x:hidden;}
 	text-align:center;
 }
 
+a {
+	
+}
+
+a:visited {
+	color:blue; text-decoration:none;
+}
+
 .middlepic {
 border-left:none;
 border-right:none;
