@@ -2,9 +2,11 @@ body {
 	
 }
 
-#about {
-	margin:50px;
-	margin-top:105px;
+.colem {
+	margin:105px 100px 50px 60px;
+}
+
+#about, #rules {
 	background-color:#f2f2f2;
 	border:black 1px solid;
 	border-radius:20px;
@@ -29,4 +31,14 @@ form input {
 	color:#A8A8A8;
 	border:#E0E0E0 2px solid;
 	border-radius:10px;
+}
+
+#sbmttdAnswr {
+	width:80%;
+	background-color:#F8F8F8; 
+	padding:50px 70px 100px 70px;
+	margin:50px;
+	margin-top:105px;
+	border:#E0E0E0 2px solid;
+	border-radius:20px;
 }

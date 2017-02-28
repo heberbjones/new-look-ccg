@@ -74,78 +74,36 @@
 		
 		<div class="row">
 		
-			<div class="col-md-3 colem">
+			<div class="col-md-12 rales" id="sbmttdAnswr">
 			
-				<div id="about">
+				<h2 class="redtitl">Entered Your Game!</h2>
+				<BR>
+				<?php
+				$user = $_POST['user'];
+				$email = $_POST['email'];
+				$linkem = $_POST['linktoaccnt'];
+				$gitrepo = $_POST ['gitrepo'];
+				$to = 'crystalcleangaming@gmail.com';
+				$subject = 'Entered in contest';
+				$sendmsg = $user . ' submitted ' . $gitrepo . ', and they said ' . $linkem . ' to linking their account.' . 'From: ' . $email;
 				
-					<h2 class="redtitl">About The Contest</h2>
-					
-					<br>
-					
-					<h4 class="rales">
-					
-						<span class="red">C.C.G</span> Has a contest once a month. Where developers can enter 
-						in their game, that they made.
-						
-					</h4>
+				mail($to, $subject, $sendmsg, 'From: ' . $email);
 				
-				</div>
-				<br><br>
-				<div id="rules">
+				echo $user . ', submitted a link to their game, at ' . $gitrepo . '<br /> <br />'; 
+				echo 'And they said ' . $linkem . ' to having a link to their account when the game starts.';
 				
-					<h2 class="redtitl">Requirements</h2>
-					
-					<br>
-					
-					<ul>
-					
-						<li>Your Game must be saved in a Github repository.</li><br>
-						
-						<li>You Must have a C.C.G account.</li><br>
-					
-					</ul>
-					
-				</div>
+				?>
+				
+				
 			
 			</div>
-			
-			<div class="col-md-6" id="enterit">
-			
-				<h2>Game Contest</h2>
-				
-				<form action="contest.php" method="post">
-				
-					<br><br><br>
-				
-					<input type="text" placeholder="C.C.G Username" name="user" required></input>
-					<br><br>
-					<input type="password" placeholder="Password" name="password" required></input>
-					<br><br>
-					<input type="email" placeholder="Your Email" name="email" required></input>
-					<br><br>
-					<h4>Have a link to your C.C.G account when other users click on my game.</h4>
-					<br>
-					<input required type="radio" name="linktoaccnt" value="yes"> Yes</input>
-					<br><br>
-					<input required type="radio" name="linktoaccnt" value="no"> no</input>
-					<br><br>
-					<input required type="url" placeholder="Link to Git repository" name="gitrepo"></input>
-					<br><br>
-					<input type="submit" value="submit"></input>
-				
-				</form>
-			
-			</div>
-						
+		
 		</div>
 		
 		<script src="../mains/main.js">
 		</script>
 		
 		<script src="../mains/slide.js">
-		</script>
-		
-		<script src="contest.js">
 		</script>
 		
 	</body>
