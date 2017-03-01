@@ -79,18 +79,23 @@
 				<h2 class="redtitl">Entered Your Game!</h2>
 				<BR>
 				<?php
+				
 				$user = $_POST['user'];
+				$info = $_POST['info'];
 				$email = $_POST['email'];
 				$linkem = $_POST['linktoaccnt'];
 				$gitrepo = $_POST ['gitrepo'];
 				$to = 'crystalcleangaming@gmail.com';
 				$subject = 'Entered in contest';
-				$sendmsg = $user . ' submitted ' . $gitrepo . ', and they said ' . $linkem . ' to linking their account.' . 'From: ' . $email;
+				$sendmsg = $user . ' submitted ' . $gitrepo . ', and they said ' . $linkem . ' to linking their account.' . ' Here is the info they sent: ' . $info .  '. From: ' . $email;
 				
-				mail($to, $subject, $sendmsg, 'From: ' . $email);
+				mail($to, $subject, $sendmsg, ' From: ' . $email);
 				
 				echo $user . ', submitted a link to their game, at ' . $gitrepo . '<br /> <br />'; 
-				echo 'And they said ' . $linkem . ' to having a link to their account when the game starts.';
+				echo 'And they said ' . $linkem . ' to having a link to their account when the game starts.' . '<br /> <br />';
+				echo 'This is the info they gave on their game: ' . '<br /> <br />';
+				echo $info;
+				
 				
 				?>
 				

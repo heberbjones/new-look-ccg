@@ -33,6 +33,12 @@ form input {
 	border-radius:10px;
 }
 
+form textarea {
+	color:black;
+	border:#E0E0E0 2px solid;
+	font-size:20px;
+}
+
 #sbmttdAnswr {
 	width:80%;
 	background-color:#F8F8F8; 
