@@ -87,8 +87,11 @@
 				$gitrepo = $_POST ['gitrepo'];
 				$to = 'crystalcleangaming@gmail.com';
 				$subject = $user . ' Entered in contest!';
+				$usermsg2 = 'You said ' . $linkem . ' to having a link to your C.C.G account when a user clicks on your game. You also said the following about your game: ' . '<br />' . $info;
 				$sendmsg = $user . ' submitted ' . $gitrepo . ', and they said ' . $linkem . ' to linking their account.' . ' Here is the info they sent: ' . $info .  ' From: ' . $email;
+				$usersmsg = 'Congrats! You submitted your game at: ' . $gitrepo . ' in the C.C.G game contest. If your game doesn\'t qualify for the rules, it will be disqualified. But if it qualifies for the rules you have a chance of winning!' . '<br /> <br />' . $usermsg2;
 				
+				mail($email, $subject, $usersmsg, 'From: ' . $to);
 				mail($to, $subject, $sendmsg, 'From: ' . $email);
 				
 				echo $user . ', submitted a link to their game, at ' . $gitrepo . '<br /> <br />'; 

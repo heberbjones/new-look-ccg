@@ -50,6 +50,23 @@ a {
 	
 }
 
+#footer {
+	background-color:#f2f2f2;
+	padding-top:30px;
+	padding-bottom:40px;
+	
+}
+
+.csslink {
+	color:black; 
+	text-decoration:underline;
+	
+}
+
+.csslink:hover {
+	color:#808080;
+}
+
 a:visited {
 	color:blue; text-decoration:none;
 }
