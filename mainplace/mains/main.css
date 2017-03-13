@@ -13,7 +13,7 @@ body {margin-left:18%; transition:0.5s; overflow-x:hidden;}
 #colbtn {}
 
 .red {
-	color:red;
+	color:gray;
 }
 
 #colbtn:hover {color:#d9d9d9; cursor:pointer;}
@@ -42,7 +42,7 @@ body {margin-left:18%; transition:0.5s; overflow-x:hidden;}
 }
 
 .redtitl {
-	color:red;
+	color:#666666;
 	text-align:center;
 }
 

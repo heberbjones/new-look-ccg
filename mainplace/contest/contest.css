@@ -8,8 +8,7 @@ body {
 
 #about, #rules {
 	background-color:#f2f2f2;
-	border:black 1px solid;
-	border-radius:20px;
+
 	padding:10px 30px 10px 20px;
 }
 
@@ -31,6 +30,10 @@ form input {
 	color:#A8A8A8;
 	border:#E0E0E0 2px solid;
 	border-radius:10px;
+}
+
+.box-s {
+	box-shadow: 5px 5px 15px #888888;
 }
 
 form textarea {
