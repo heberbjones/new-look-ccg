@@ -34,12 +34,15 @@ function leftermovement () {
 }
 
 
+
 window.onscroll = function() {scrollFunction()};
 
+var pagetype = document.getElementById("pagetype");
+
 function scrollFunction() {
-    if (document.body.scrollTop > 250) {
-        alert("hi");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      pagetype.style.width = "100%";
     } else {
-        document.getElementById("myBtn").style.display = "none";
+      
     }
 }

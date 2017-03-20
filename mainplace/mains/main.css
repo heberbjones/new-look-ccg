@@ -32,7 +32,7 @@ background-repeat:no-repeat; background-size:cover;}
 }
 
 #pagetype {
-	margin-top:250px;
+	margin-top:250px; transition:2s;
 }
 
 .hvrBlack {
