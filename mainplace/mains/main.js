@@ -11,6 +11,8 @@ var colstat = {
 colbtn.onclick = leftermovement;
 
 
+
+
 function leftermovement () {
 	
 	if (colstat.seen === "yes") {
@@ -29,4 +31,15 @@ function leftermovement () {
 		colstat.seen = "yes";
 	}
 	
+}
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 250) {
+        alert("hi");
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
 }
