@@ -11,6 +11,8 @@ var colstat = {
 colbtn.onclick = leftermovement;
 
 
+
+
 function leftermovement () {
 	
 	if (colstat.seen === "yes") {
@@ -29,4 +31,24 @@ function leftermovement () {
 		colstat.seen = "yes";
 	}
 	
+}
+
+
+
+window.onscroll = function() {scrollFunction()};
+
+var pagetype = document.getElementById("pagetype");
+
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      pagetype.style.marginTop = "70px";
+	  pagetype.style.position = "fixed";
+	  
+    } 
+	
+	else if (document.body.scrollTop < 200 || document.documentElement.scrollTop < 200) {
+      pagetype.style.marginTop = "250px";
+	  pagetype.style.position = "absolute"; 
+	
+    }
 }
