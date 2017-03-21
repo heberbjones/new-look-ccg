@@ -40,8 +40,9 @@ window.onscroll = function() {scrollFunction()};
 var pagetype = document.getElementById("pagetype");
 
 function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      pagetype.style.width = "100%";
+    if (document.body.scrollTop > 170 || document.documentElement.scrollTop > 100) {
+      pagetype.style.marginTop = "70px";
+	  pagetype.style.position = "fixed";
     } else {
       
     }
