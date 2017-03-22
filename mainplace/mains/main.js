@@ -41,14 +41,18 @@ var pagetype = document.getElementById("pagetype");
 
 function scrollFunction() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      pagetype.style.marginTop = "70px";
+      pagetype.style.marginTop = "0px";
 	  pagetype.style.position = "fixed";
+	  
+	  if (colstat.seen == "yes") {
+	  pagetype.style.width = "82%";}
 	  
     } 
 	
 	else if (document.body.scrollTop < 200 || document.documentElement.scrollTop < 200) {
       pagetype.style.marginTop = "250px";
 	  pagetype.style.position = "absolute"; 
+	  pagetype.style.width = "100%";
 	
     }
 }
