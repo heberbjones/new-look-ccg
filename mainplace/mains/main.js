@@ -40,7 +40,7 @@ window.onscroll = function() {scrollFunction()};
 var pagetype = document.getElementById("pagetype");
 
 function scrollFunction() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
       pagetype.style.marginTop = "0px";
 	  pagetype.style.position = "fixed";
 	  
@@ -49,7 +49,7 @@ function scrollFunction() {
 	  
     } 
 	
-	else if (document.body.scrollTop < 200 || document.documentElement.scrollTop < 200) {
+	else if (document.body.scrollTop < 250 || document.documentElement.scrollTop < 250) {
       pagetype.style.marginTop = "250px";
 	  pagetype.style.position = "absolute"; 
 	  pagetype.style.width = "100%";
