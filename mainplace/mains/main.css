@@ -16,6 +16,11 @@ body {margin-left:18%; transition:0.5s; overflow-x:hidden;}
 	color:gray;
 }
 
+.redtext {
+	color:red;
+}
+
+
 #colbtn:hover {color:#d9d9d9; cursor:pointer;}
 #colbtn:active {color:red;}
 

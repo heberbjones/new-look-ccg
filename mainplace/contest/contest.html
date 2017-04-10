@@ -24,6 +24,30 @@
 		
 		<title>C.C.G Contest</title>
 		
+
+
+<script>
+// Get all elements with class="closebtn"
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+// Loop through all close buttons
+for (i = 0; i < close.length; i++) {
+    // When someone clicks on a close button
+    close[i].onclick = function(){
+
+        // Get the parent of <span class="closebtn"> (<div class="alert">)
+        var div = this.parentElement;
+
+        // Set the opacity of div to 0 (transparent)
+        div.style.opacity = "0";
+
+        // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
+</script>
+		
 	</head>
 	
 	<body id="body">
@@ -63,8 +87,8 @@
 				<div class="row">
 				
 					<h2 class="jfs col-md-1"><i id="colbtn" class="fa fa-angle-left"></i></h2>
-					
-					<h1 id="logo" class="jfs col-md-4"><a href="http://crystalcleangaming.com" title="Crystal-Clean-Gaming.com"><img src="../pics/logo.png" alt="CCG Logo" width="300px"></a></h2>
+
+										<h1 id="logo" class="jfs col-md-4"><a href="http://crystalcleangaming.com" title="Crystal-Clean-Gaming.com"><span class="hvrBlack"><span style="color:red;">Crystal . C . </span>Gaming</span></a></h1>
 					
 				</div>
 			
@@ -99,7 +123,7 @@
 					
 					<ul>
 					
-						<li>Your Game must be saved in a Github repository.</li><br>
+						<li>Your Game must be saved in a <a href="https://github.com/" title="github.com">Github</a> repository.</li><br>
 						
 						<li>You Must have a C.C.G account.</li><br>
 					
@@ -117,7 +141,7 @@
 				
 					<br><br><br>
 				
-					<input type="text" placeholder="C.C.G Username" name="user" required></input>
+					<input type="text" placeholder="C.C.G Username" name="user" required autofocus></input>
 					<br><br>
 					<input type="password" placeholder="Password" name="password" required></input>
 					<br><br>
@@ -125,13 +149,16 @@
 					<br><br>
 					<h4>Have a link to your C.C.G account when other users click on your game.</h4>
 					<br>
-					<input required type="radio" name="linktoaccnt" value="yes"> Yes</input>
+					<input required type="radio" name="linktoaccnt" value="yes" autofocus> Yes</input> 
 					<br><br>
 					<input required type="radio" name="linktoaccnt" value="no"> no</input>
-					<br><br>
+					<br><br><br><br>
 					<input required type="url" placeholder="Link to Github repository" name="gitrepo"></input>
 					<br><br>
-					<h4>Info on your game:</h4>
+					<h4>Info on your game: <br>(
+					<span class="redtext">This is an optional, but redommended input.</span>)</h4>
+					
+
 					<br>
 					<textarea rows='7' cols="30" name="info">
 					
