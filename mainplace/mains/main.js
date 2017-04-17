@@ -45,7 +45,9 @@ function scrollFunction() {
 	  pagetype.style.position = "fixed";
 	  
 	  if (colstat.seen == "yes") {
-	  pagetype.style.width = "82%";}
+	  pagetype.style.width = "50%";
+	  pagetype.style.left = "50%";
+	  }
 	  
     } 
 	
@@ -53,6 +55,7 @@ function scrollFunction() {
       pagetype.style.marginTop = "250px";
 	  pagetype.style.position = "absolute"; 
 	  pagetype.style.width = "100%";
+	  pagetype.style.left = "0";
 	
     }
 }
