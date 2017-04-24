@@ -100,7 +100,36 @@
 				echo $info;
 				
 				
+				$randNumb = array("1","2","3","4","5","6","7","8","9");
+				
+				$random_keys = array_rand($randNumb,5);
+				
+				echo $a[$random_keys[0]]."<br>";
+				
+				echo $a[$random_keys[1]]."<br>";
+				
+				echo $a[$random_keys[3]]."<br>";			
+				
+				echo $a[$random_keys[4]];
+				
+				
+				
+					$dbc = mysqli_connect('crystalcleangaming.com/contest/contest', 'heberbjones', 'harry7272', 'contest')
+					or die('Error connecting to MySQL server.');
+					
+					$query = "INSERT INTO contest_info (user, info, email, linkem, gitrepo) " .
+					"VALUES ('Sally', 'Jones', '3 days ago', '1 day', 'four', 'green with six tentacles', " .
+					"'We just talked and played with a dog', 'yes', 'I may have seen your dog. Contact me.', " .
+					"'sally@gregs-list.net')";
+					
+					$result = mysqli_query($dbc, $query)
+					or die('Error querying database.');
+					
+					mysqli_close($dbc);
+					
 				?>
+				
+
 				
 				
 			
