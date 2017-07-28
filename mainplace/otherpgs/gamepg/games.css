@@ -1,3 +1,7 @@
+body {
+	margin-left:18%;
+}
+
 .games {padding:0 5% 10px 5%; background-color:white; color:red;}
 .games img {
 
@@ -14,13 +18,11 @@ border:white 1px solid;
 	margin:65px 5% 5% 5%;
 }
 
-#topgames {
-	border-right:black 1px dashed;
-	
-}
+
 
 .dotrow div {
-	border:black 1px dashed;
+
+	border:#1a75ff 2px solid;
 	padding:10px 10px 30px 10px;
 	
 }
@@ -32,5 +34,5 @@ margin:10px 10px 10px 20px;
 }
 
 .dotrow img:hover {
-	border:red 1px solid;
+	border:#1a75ff 1px solid;
 }
